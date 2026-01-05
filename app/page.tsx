@@ -21,7 +21,7 @@ const { data: balance, isLoading } = useBalance({
       {!isConnected ? (
         <div>
           <button onClick={() => connect.mutate({ connector: injected() })}>
-            Connect Wallet (MetaMask)
+            Connect MetaMask Wallet (MetaMask)
           </button>
           {connect.error && (
             <p style={{ color: "crimson" }}>{connect.error.message}</p>
